@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/2d7fe3c722.js" crossorigin="anonymous"></script>
+    <title>Beast</title>
+    <style>
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .chart {
+            height: 20px;
+            width: 0;
+            transition: width 1s ease;
+        }
+    
+        .chart-container {
+            width: 100%;
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+         .profile_img{
+            border-radius: 100%;
+            border:4px solid white;
+            width:320px;
+            height: auto;
+        } 
+        
+     body {
+                background-color: #000;
+                color: #a92c27f7; /* Gold */
+                font-family: 'Arial', sans-serif;
+            } 
+            .fa-twitter:hover{
+                color:#16a34a; 
+            }
+            .fa-github:hover{
+                color: #9333ea;
+            }
+            
+            .fa-linkedin-in:hover{
+                color:#2563eb ;
+            }
+                   
+    </style>
+</head>
+<body class="font-sans bg-gray-900 text-white">
+    <header class="bg-gray-900 py-4 lg:py-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <h1 class="text-2xl lg:text-4xl font-bold sm:m-2 animate__animated animate__pulse animate__infinite">
+            <span class="text-purple-600">A</span>
+            <span class="text-green-600">n</span>
+            <span class="text-blue-600">m</span>
+            <span class="">o</span>
+            <span class="">l</span>&nbsp;
+            <span class="text-blue-600">S</span>
+            <span class="text-purple-600">a</span>
+            <span class="text-green-600">h</span>
+            </h1>
+            
+            <!-- Navigation Menu -->
+            <nav class="hidden lg:flex items-center space-x-6">
+                <a href="#" class="text-gray-300 hover:text-white transition duration-300 ease-in-out">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-white transition duration-300 ease-in-out">About</a>
+                <a href="#portfolio" class="text-gray-300 hover:text-white transition duration-300 ease-in-out">Portfolio</a>
+                <a href="#contact" class="text-gray-300 hover:text-white transition duration-300 ease-in-out">Contact</a>
+            </nav>
+    
+            <!-- Mobile Menu (Hamburger Icon) -->
+            <div class="flex lg:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu (Dropdown) -->
+        <div id="mobile-menu" class="lg:hidden hidden">
+            <div class="bg-gray-800 py-2 px-4 space-y-2">
+                <a href="#" class="block text-gray-300 hover:text-white transition duration-300 ease-in-out">Home</a>
+                <a href="#about" class="block text-gray-300 hover:text-white transition duration-300 ease-in-out">About</a>
+                <a href="#portfolio" class="block text-gray-300 hover:text-white transition duration-300 ease-in-out">Portfolio</a>
+                <a href="#contact" class="block text-gray-300 hover:text-white transition duration-300 ease-in-out">Contact</a>
+            </div>
+        </div>
+    </header>
+   <section class="hero bg-gradient-to-b from-blue-500 to-purple-600 text-white py-16 lg:py-24">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6">
+        <div class="lg:w-1/2 lg:pr-16">
+            <h1 class="text-4xl lg:text-6xl font-bold leading-tight mb-4">Web Developer</h1>
+            <p class="text-lg lg:text-xl mb-8">Crafting innovative solutions and bringing ideas to life.</p>
+            <a href="../images/Anmol_s_resume.pdf" download="Anmol_Resume.pdf" class="bg-white text-gray-800 font-semibold py-2 px-6 rounded-full inline-block transition duration-300 ease-in-out hover:text-gray-900">My Resume</a>
+        </div>
+        <div class="profile_container lg:w-1/2 lg:pl-16 mt-8 lg:mt-0">
+            <img src="../images/img.jpg" class="profile_img shadow-2xl transform scale-105 transition duration-500 ease-in-out hover:scale-110" />
+        </div>
+    </div>
+</section>
+
+    <section id="about" class="about-me bg-gray-800 text-white py-10 lg:py-24">
+        <div class="container mx-auto px-6">
+            <!-- Section Title -->
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-10">About Me</h2>
+    
+            <!-- Content Flexbox -->
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                <!-- Text Content -->
+                <div class="lg:w-1/2">
+                    <p class="text-lg mb-6"> Hi there! I'm Anmol Sah, currently in my third year, sixth semester of college. I'm passionate about web development and constantly enhancing my skills in this domain. Alongside my academic pursuits, I'm diving deep into the world of Data Structures and Algorithms using C++, aiming to strengthen my problem-solving abilities.</p>
+                    <p class="text-lg">I'm eager to apply my knowledge and skills in real-world projects. I believe in continuous learning and am dedicated to honing my craft to become a proficient developer.</p>
+                </div>
+                
+                <!-- Timeline -->
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <div class=""></div>
+                        <div class="timeline flex flex-col">
+                            <!-- Timeline Item 1 -->
+                            <div class="timeline-item mb-8">
+                                <div class="timeline-icon bg-purple-600 text-white">
+                                    <i class="px-4 fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="timeline-content ml-6">
+                                    <h3 class="text-lg font-semibold mb-2">Siliguri Institute Of Technology</h3>
+                                    <p class="text-sm">Bachelor's in Computer Science and Engineering</p>
+                                </div>
+                            </div>
+    
+                            <!-- Timeline Item 2 -->
+                            <div class="timeline-item mb-8">
+                                <div class="timeline-icon bg-blue-600 text-white">
+                                    <i class="px-4 fas fa-briefcase"></i>
+                                </div>
+                                <div class="timeline-content ml-6">
+                                    <h3 class="text-lg font-semibold mb-2">Web Development Career</h3>
+                                    <p class="text-sm">Worked as a Teaching Assistant at Coding Ninjas for 3 months, assisting more than 550 students in solving doubts related to Full Stack Web Development.</p>
+                                </div>
+                            </div>
+    
+                            <!-- Timeline Item 3 -->
+                            <div class="timeline-item">
+                                <div class="timeline-icon bg-green-600 text-white">
+                                    <i class="px-4 fas fa-code"></i>
+                                </div>
+                                <div class="timeline-content ml-6">
+                                    <h3 class="text-lg font-semibold mb-2">Found Passion for Coding</h3>
+                                    <p class="text-sm">Engaged in self-paced learning, diving deep into web development, and mastering Data Structures and Algorithms using C++. Participated in numerous college hackathons and online hackathons to apply and enhance my coding skills.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio bg-gray-800 py-10 lg:py-5">
+        <div class="container mx-auto px-6">
+            <!-- Section Title -->
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-10">Portfolio</h2>
+    
+            <!-- Portfolio Flex Container -->
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105 flex flex-col">
+                    <img src="../images/todo.png" alt="Project 1" class="w-full h-64 object-cover">
+                    <div class="p-6 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2  text-blue-600">Todo</h3>
+                            <p class="text-gray-700 mb-4 truncate">
+                                I developed a feature-rich to-do list application using vanilla JavaScript, incorporating functionalities such as a timer, sorting options, and a theme changer. </p>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="https://anmolsah.github.io/todo/" class="bg-purple-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300 ease-in-out flex-grow mr-2" target="_blank">Live</a>
+                            <a href="https://github.com/anmolsah/anmolsah.github.io/tree/main/todo" class="bg-green-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-purple-600 transition duration-300 ease-in-out flex-grow ml-2" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105 flex flex-col">
+                    <img src="../images/boardyy.jpg" alt="Project 2" class="w-full h-64 object-cover">
+                    <div class="p-6 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2  text-green-600">Boardy</h3>
+                            <p class="text-gray-700 mb-4">Boardy is a collaborative online whiteboard enabling real-time drawing, with features like color picker, adjustable thickness, and undo/redo functionality.</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="https://anmolsah.github.io/Boardy/whiteboard.html" class="bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-purple-600 transition duration-300 ease-in-out flex-grow mr-2" target="_blank">Live</a>
+                            <a href="https://github.com/anmolsah/anmolsah.github.io/tree/main/Boardy" class="bg-purple-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out flex-grow ml-2" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105 flex flex-col">
+                    <img src="../images/lovebyte.jpg" alt="Project 3" class="w-full h-64 object-cover">
+                    <div class="p-6 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2 text-purple-600">LoveBytes</h3>
+                            <p class="text-gray-700 mb-4">
+                                LoveBytes is a web app for meal searching, viewing details, and favorites management, featuring dynamic interactions and utilizing the MealDB API.</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="https://anmolsah.github.io/lovebytes/" class="bg-green-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out flex-grow mr-2" target="_blank">Live</a>
+                            <a href="https://github.com/anmolsah/anmolsah.github.io/tree/main/lovebytes" class="bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300 ease-in-out flex-grow ml-2" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills bg-gray-800 py-16 lg:py-24">
+        <div class="container mx-auto px-6">
+            <!-- Section Title -->
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-10">Skills and Expertise</h2>
+    
+            <!-- Skill Cards Container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill Card 1 -->
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-purple-600">Frontend Development</h3>
+                    <p class="text-gray-800 text-lg">HTML, CSS, JavaScript, React, TailwindCss</p>
+                </div>
+    
+                <!-- Skill Card 2 -->
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-green-600">Backend Development</h3>
+                    <p class="text-gray-800 text-lg">NodeJS, MongoDB, Express</p>
+                </div>
+    
+                <!-- Skill Card 3 -->
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-600">Programming</h3>
+                    <p class="text-gray-800 text-lg">C, C++</p>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <section id="contact"  class="bg-gray-800 py-16 lg:py-5">
+        <div class="container mx-auto px-6 text-center">
+            <!-- Section Title -->
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-10">Contact Me</h2>
+    
+                   <!-- Contact Info -->
+        <div class="max-w-lg mx-auto mb-2">
+            <!-- Gmail -->
+            <div class="items-center mb-6">
+                <span class="text-green-600 mr-4"><i class="fas fa-envelope"></i></span>
+                <a href="mailto:your.email@gmail.com" class="text-blue-500 font-semibold">anmolsah419@gmail.com</a>
+            </div>
+            <!-- Phone Number -->
+            <div class=" items-center">
+                <span class="text-purple-600 mr-4"><i class="fab fa-whatsapp"></i></span>
+                <span class="text-purple-800 font-semibold">+91 82506 76762</span>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="flex justify-center mt-10">
+            <a href="https://x.com/anni_i29?t=ZKMhsWtrDXGC2ea3x0meXw&s=09" class="text-gray-600 mr-4"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/anmolsah" class="text-gray-600  mr-4"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/anmol-sah-551083238/" class="text-gray-600  mr-4 "><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        </div>
+    </section>
+    <footer class="footer bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 flex flex-col items-center">
+            <!-- Footer Navigation -->
+            <nav class="flex justify-center mb-4">
+                <a href="#" class="text-gray-300 hover:text-white px-4">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-white px-4">About</a>
+                <a href="#portfolio" class="text-gray-300 hover:text-white px-4">Portfolio</a>
+                <a href="#contact" class="text-gray-300 hover:text-white px-4">Contact</a>
+            </nav>
+    
+            <!-- Copyright Information -->
+            <div class="text-center text-gray-400 text-sm">
+                &copy; 2024 Anmol Sah. All rights reserved.
+            </div>
+    
+            <!-- Scroll-to-Top Button -->
+            <button  onclick="scrollToTop()" class="scroll-to-top bg-gradient-to-b from-blue-500 to-purple-600 text-white px-4 py-2 rounded-lg mt-4 transition duration-300">Back to Top</button>
+        </div>
+    </footer>
+    
+    
+    <script src="./script.js"></script>
+</body>
+</html>

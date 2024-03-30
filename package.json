@@ -1,0 +1,17 @@
+{
+  "name": "beast",
+  "version": "1.0.0",
+  "description": "porfolio webiste",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Anmol",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
