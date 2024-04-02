@@ -1,0 +1,162 @@
+.light-mode body {
+    background-color: #fff;
+    color: #333; 
+}
+
+.light-mode .header {
+    background-color: #f3f4f6; 
+    color: #333; 
+}
+
+
+.light-mode .about-me,
+.light-mode .portfolio,
+.light-mode .skills,
+.light-mode .contact,
+.light-mode .footer {
+    background-color: #f3f4f6; 
+    color: #333; 
+}
+
+
+
+.light-mode .text-gradient {
+    background: none; 
+    -webkit-background-clip: initial; 
+    -webkit-text-fill-color: rgba(19, 112, 152, 0.93); 
+}
+
+.light-mode .timeline-icon {
+    background-color: #9CA3AF; 
+}
+
+.light-mode .portfolio-item {
+    background-color: #fff; 
+    color: #333; 
+}
+
+.light-mode .scroll-to-top {
+    background: linear-gradient(to bottom, #3B82F6, #8B5CF6); 
+    color: #fff; 
+}
+
+.light-mode .text-gray-300 {
+    color: #6B7280; 
+}
+
+.light-mode .text-gray-400 {
+    color: #6B7280;
+}
+
+.light-mode .text-gray-500 {
+    color: #6B7280; 
+}
+
+.light-mode .text-gray-600 {
+    color: #6B7280; 
+}
+
+.light-mode .text-gray-700 {
+    color: #6B7280; 
+}
+
+.light-mode .text-gray-800 {
+    color: #6B7280; 
+}
+
+.light-mode .text-gray-900 {
+    color: #6B7280; 
+}
+
+.light-mode .text-blue-500 {
+    color: #3B82F6; 
+}
+
+.light-mode .text-blue-600 {
+    color: #2563EB;
+}
+
+.light-mode .text-purple-600 {
+    color: #8B5CF6; 
+}
+
+.light-mode .text-green-600 {
+    color: #10B981; 
+}
+
+.light-mode .text-white {
+    color: #fff; 
+}
+
+.light-mode .bg-gray-900 {
+    background-color: #f3f4f6; 
+}
+
+.light-mode .bg-gray-800 {
+    background-color: #fff;
+}
+
+.light-mode .bg-blue-500 {
+    background-color: #3B82F6; 
+}
+
+.light-mode .bg-purple-600 {
+    background-color: #8B5CF6; 
+}
+
+.light-mode .bg-green-600 {
+    background-color: #10B981; 
+}
+
+.light-mode .bg-gradient-to-b {
+    background: linear-gradient(to bottom, #3B82F6, #8B5CF6); 
+}
+
+.light-mode .bg-white {
+    background-color: #fff; 
+}
+
+.light-mode .bg-gray-800 {
+    background-color: #f3f4f6; 
+}
+
+.light-mode .hover\:text-white:hover {
+    color: #080d18f4; 
+}
+
+.light-mode .hover\:text-gray-300:hover {
+    color: #6B7280; 
+}
+
+.light-mode .hover\:text-gray-600:hover {
+    color: #6B7280; 
+}
+
+.light-mode .hover\:text-blue-600:hover {
+    color: #2563EB; 
+}
+
+.light-mode .hover\:text-purple-600:hover {
+    color: #8B5CF6; 
+}
+
+.light-mode .hover\:text-green-600:hover {
+    color: #10B981; 
+}
+
+.light-mode .hover\:bg-blue-600:hover {
+    background-color: #2563EB; 
+}
+
+.light-mode .hover\:bg-purple-600:hover {
+    background-color: #8B5CF6; 
+}
+
+.light-mode .hover\:bg-green-600:hover {
+    background-color: #10B981; 
+}
+
+.light-mode .about-me {
+    background-color: #f3f4f6; 
+    color: #333; 
+}
