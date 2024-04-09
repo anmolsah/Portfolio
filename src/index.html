@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/2d7fe3c722.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="lightMode.css">
+    <link rel="stylesheet" href="extra.css">
     <title>Beast</title>
     <style>
         body{
@@ -28,7 +29,7 @@
          .profile_img{
             border-radius: 100%;
             border:4px solid white;
-            width:320px;
+            width:400px;
             height: auto;
         } 
         
@@ -62,27 +63,28 @@
     <header class="header bg-gray-800 py-4 lg:py-6">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
-            <h1 class="text-2xl lg:text-4xl font-bold sm:m-2 animate__animated animate__pulse animate__infinite">
-                <span class="text-gradient text-blue-500">A</span>
-                <span class="text-gradient text-purple-600">n</span>
-                <span class="text-gradient text-blue-600">m</span>
-                <span class="text-gradient">o</span>
-                <span class="text-gradient">l</span>&nbsp;
-                <span class="text-gradient text-blue-600">S</span>
-                <span class="text-gradient text-purple-600">a</span>
-                <span class="text-gradient text-green-600">h</span>
+            <h1 class="ml-6 lg:text-4xl text-2xl font-bold sm:m-2 animate__animated animate__pulse animate__infinite">
+                <span class="logo-name text-gradient text-blue-500">A</span>
+                <span class="logo-name  text-gradient text-purple-600">n</span>
+                <span class="logo-name  text-gradient text-blue-600">m</span>
+                <span class="logo-name  text-gradient">o</span>
+                <span class="logo-name  text-gradient">l</span>&nbsp;
+                <span class="logo-name  text-gradient text-blue-600">S</span>
+                <span class="logo-name text-gradient text-purple-600">a</span>
+                <span class="logo-name text-gradient text-green-600">h</span>
             </h1>
+
             
             <!-- Navigation Menu -->
             <nav class="hidden lg:flex items-center space-x-6">
-                <a href="#" class="text-gray-300 hover:text-white transition duration-300 ease-in-out">Home</a>
-                <a href="#about" class="text-gray-300 hover:text-white transition duration-300 ease-in-out">About</a>
-                <a href="#portfolio" class="text-gray-300 hover:text-white transition duration-300 ease-in-out">Portfolio</a>
-                <a href="#contact" class="text-gray-300 hover:text-white transition duration-300 ease-in-out">Contact</a>
+                <a href="#" class="text-gray-300 hover:text-white transition duration-300 ease-in-out text-xl">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-white transition duration-300 ease-in-out text-xl">About</a>
+                <a href="#portfolio" class="text-gray-300 hover:text-white transition duration-300 ease-in-out text-xl">Portfolio</a>
+                <a href="#contact" class="text-gray-300 hover:text-white transition duration-300 ease-in-out text-xl">Contact</a>
             </nav>
 
             <!--Light/Dark Mode-->
-            <button id="switch-mode" class="text-gray-300 hover:text-white focus:outline-none">
+            <button id="switch-mode" class=" text-gray-300 hover:text-white focus:outline-none p-6">
                 <i class="fas fa-adjust"></i>
             </button>
     
@@ -106,18 +108,24 @@
             </div>
         </div>
     </header>
-   <section class="hero bg-gradient-to-b from-blue-500 to-purple-600 text-white py-16 lg:py-24">
-    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6">
-        <div class="lg:w-1/2 lg:pr-16">
-            <h1 class="text-4xl lg:text-6xl font-bold leading-tight mb-4">Web Developer</h1>
-            <p class="text-lg lg:text-xl mb-8">Crafting innovative solutions and bringing ideas to life.</p>
-            <a href="./images/Anmol_s_resume.pdf" download="Anmol_Resume.pdf" class="bg-white text-gray-800 font-semibold py-2 px-6 rounded-full inline-block transition duration-300 ease-in-out hover:text-gray-900">My Resume</a>
+    <section class="hero bg-gradient-to-b from-blue-500 to-purple-600 text-white py-16 lg:py-24">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6">
+            <!-- Content for both large and small screens -->
+            <div class="lg:w-1/2 lg:pr-16">
+                <h1 class="text-4xl lg:text-6xl font-bold leading-tight mb-4 text-center lg:text-left">Web Developer</h1>
+                <p class="text-lg lg:text-xl mb-8 text-center lg:text-left">Crafting innovative solutions and bringing ideas to life.</p>
+                <div class="text-center lg:text-left"> <!-- Wrap the button in a container and apply text-center -->
+                    <a href="./images/Anmol_s_resume.pdf" download="Anmol_Resume.pdf" class="bg-white text-gray-800 font-semibold py-2 px-6 rounded-full inline-block transition duration-300 ease-in-out hover:text-gray-900">My Resume</a>
+                </div>
+            </div>
+    
+            <!-- Image container -->
+            <div class="profile_container lg:w-1/2 lg:pl-16 mt-8 lg:mt-0">
+                <img src="./images/img.jpg" class="profile_img shadow-2xl transform scale-105 transition duration-500 ease-in-out hover:scale-110 mx-auto lg:mx-0" />
+            </div>
         </div>
-        <div class="profile_container lg:w-1/2 lg:pl-16 mt-8 lg:mt-0">
-            <img src="./images/img.jpg" class="profile_img shadow-2xl transform scale-105 transition duration-500 ease-in-out hover:scale-110" />
-        </div>
-    </div>
-</section>
+    </section>
+    
 
     <section id="about" class="about-me bg-gray-800 text-white py-10 lg:py-24">
         <div class="container mx-auto px-6">
@@ -228,6 +236,20 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="portfolio-item bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105 flex flex-col">
+                    <img src="./images/Netflix-Gemini.png" alt="Project 4" class="w-full h-64 object-cover">
+                    <div class="p-6 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2  text-green-600">Netflix-Gemini</h3>
+                            <p class="text-gray-700 mb-4">Welcome to Netflix Gemini: Your personal movie advisor. Sign up, log in, and let our beautiful AI guide you through the endless choices of movies.</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="https://netflix-gemini.vercel.app/" class="bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-purple-600 transition duration-300 ease-in-out flex-grow mr-2" target="_blank">Live</a>
+                            <a href="https://github.com/anmolsah/NetflixGemini" class="bg-purple-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out flex-grow ml-2" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -235,25 +257,25 @@
         <div class="container mx-auto px-6">
             <!-- Section Title -->
             <h2 class="text-3xl lg:text-4xl font-bold text-center mb-10">Skills and Expertise</h2>
-    
+        
             <!-- Skill Cards Container -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Skill Card 1 -->
                 <div class="p-6 bg-white shadow-xl rounded-lg">
                     <h3 class="text-2xl font-semibold mb-4 text-purple-600">Frontend Development</h3>
-                    <p class="text-gray-800 text-lg">HTML, CSS, JavaScript, React, TailwindCss</p>
+                    <p class="text-gray-800 text-lg font-semibold text-gradient">HTML, CSS, JavaScript, React, TailwindCss</p>
                 </div>
-    
+        
                 <!-- Skill Card 2 -->
                 <div class="p-6 bg-white shadow-xl rounded-lg">
                     <h3 class="text-2xl font-semibold mb-4 text-green-600">Backend Development</h3>
-                    <p class="text-gray-800 text-lg">NodeJS, MongoDB, Express</p>
+                    <p class="text-gray-800 text-lg font-semibold text-gradient">NodeJS, MongoDB, Express</p>
                 </div>
-    
+        
                 <!-- Skill Card 3 -->
                 <div class="p-6 bg-white shadow-xl rounded-lg">
                     <h3 class="text-2xl font-semibold mb-4 text-blue-600">Programming</h3>
-                    <p class="text-gray-800 text-lg">C, C++</p>
+                    <p class="text-gray-800 text-lg font-semibold text-gradient">C, C++</p>
                 </div>
             </div>
         </div>
